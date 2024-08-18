@@ -3,7 +3,7 @@
 ## Purpose
 The **Cash Flow Minimizer** project aims to optimize the management of financial transactions between multiple banks. By minimizing redundant transactions, the system enhances financial efficiency.
 
-## Overview/Features
+## Overview
 - **Transaction Optimization**: Reduces the number of transactions needed to balance cash flow among banks.
 - **Graph-Based Approach**: Uses a 2D array to represent and process transactions between banks.
 - **Greedy Algorithm**: Applies a greedy algorithm to determine the minimal set of transactions for balancing.
