@@ -1,7 +1,7 @@
 # Cash Flow Minimizer
 
 ## Purpose
-The **Cash Flow Minimizer** project aims to optimize the management of financial transactions between multiple banks. By minimizing redundant transactions, the system enhances financial efficiency and reduces operational costs.
+The **Cash Flow Minimizer** project aims to optimize the management of financial transactions between multiple banks. By minimizing redundant transactions, the system enhances financial efficiency.
 
 ## Overview/Features
 - **Transaction Optimization**: Reduces the number of transactions needed to balance cash flow among banks.
