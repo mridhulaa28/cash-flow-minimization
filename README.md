@@ -12,8 +12,7 @@ The **Cash Flow Minimizer** project aims to optimize the management of financial
 
 ## Results
 - **Efficiency Improvement**: Successfully minimized redundant transactions, resulting in a more streamlined cash flow process.
-- **Cost Reduction**: Achieved significant reductions in transaction processing costs for banks.
-- **Practical Implementation**: Demonstrated effective optimization for real-world financial scenarios, making it easier for banks to manage and settle accounts.
+- **Practical Implementation**: Can be utilized for real-world financial scenarios, which makes it easier for banks to manage and settle accounts.
 
 ## Conclusion
 The Cash Flow Minimizer project effectively addresses the problem of excessive transactions by implementing a strategic optimization approach. The use of graphs, greedy algorithms, and custom data structures ensures a practical and efficient solution for balancing financial transactions among banks, leading to reduced costs and improved operational efficiency.
