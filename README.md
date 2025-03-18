@@ -17,13 +17,13 @@ The Cash Flow Minimizer project optimizes financial transactions between multipl
 📊 **Results**<br>
 ![image](https://github.com/user-attachments/assets/a32bc730-46a5-4d80-8768-4254d8aa0935)
 
-📉 **Efficiency Improvement** <br>
+**Efficiency Improvement** <br>
 Successfully minimized redundant transactions, leading to a more streamlined cash flow process.<br>
 
-🏦 **Practical Implementation** <br>
+**Practical Implementation** <br>
 Can be applied in real-world financial systems to help banks settle accounts with minimal transactions.<br>
 
-✅ **Conclusion**<br>
+**Conclusion**<br>
 The Cash Flow Minimizer effectively reduces excessive transactions using graphs, greedy algorithms, and optimized data structures. This approach helps in reducing costs, improving efficiency, and enhancing financial operations in banking systems.<br>
 
 
