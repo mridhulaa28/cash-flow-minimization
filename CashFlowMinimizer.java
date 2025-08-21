@@ -150,12 +150,21 @@ public class CashFlowMinimizer {
             int maxIndex = maxAns.getKey();
 
             if (maxIndex == -1) {
-                ansGraph.get(minIndex).get(0).setKey(Math.abs(listOfNetAmounts[minIndex].netAmount));
-                ansGraph.get(minIndex).get(0).setValue(input[minIndex].types.iterator().next());
-
+                
                 int simpleMaxIndex = getSimpleMaxIndex(listOfNetAmounts, numBanks);
-                ansGraph.get(0).get(simpleMaxIndex).setKey(Math.abs(listOfNetAmounts[minIndex].netAmount));
-                ansGraph.get(0).get(simpleMaxIndex).setValue(input[simpleMaxIndex].types.iterator().next());
+                int intermediate = getIntermediateIndex(input, numBanks, minIndex, simpleMaxIndex);
+                    
+                if (intermediate != -1) {
+                        // debtor → intermediate
+                        ansGraph.get(minIndex).get(intermediate).setKey(Math.abs(listOfNetAmounts[minIndex].netAmount));
+                        ansGraph.get(minIndex).get(intermediate).setValue(input[minIndex].types.iterator().next());
+                    
+                        // intermediate → creditor
+                        ansGraph.get(intermediate).get(simpleMaxIndex).setKey(Math.abs(listOfNetAmounts[minIndex].netAmount));
+                        ansGraph.get(intermediate).get(simpleMaxIndex).setValue(input[simpleMaxIndex].types.iterator().next());
+                    } else {
+                        System.out.println("⚠ No common mode available even via an intermediate bank.");
+                    }
 
                 listOfNetAmounts[simpleMaxIndex].netAmount += listOfNetAmounts[minIndex].netAmount;
                 listOfNetAmounts[minIndex].netAmount = 0;
@@ -225,3 +234,4 @@ public class CashFlowMinimizer {
         sc.close();
     }
 }
+
